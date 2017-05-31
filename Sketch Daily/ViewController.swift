@@ -9,7 +9,6 @@
 import UIKit
 import Alamofire
 import AlamofireSwiftyJSON
-import SwiftyJSON
 
 var sketch: String = ""
 var date: String = ""
