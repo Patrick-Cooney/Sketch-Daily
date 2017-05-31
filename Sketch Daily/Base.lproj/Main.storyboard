@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sketch_Daily" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sketch-daily-background.png" translatesAutoresizingMaskIntoConstraints="NO" id="XbY-CD-rv8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNd-Y7-Xad">
+                                <rect key="frame" x="127" y="45" width="121" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You should sketch..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHA-kH-Akb">
+                                <rect key="frame" x="143" y="202" width="176" height="86"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="April 4th" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbU-eQ-Y1e">
+                                <rect key="frame" x="0.0" y="93" width="375" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A monkey" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJZ-gH-EA4">
+                                <rect key="frame" x="120" y="296" width="235" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mbU-eQ-Y1e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C8S-k2-yBB"/>
+                            <constraint firstAttribute="trailing" secondItem="mbU-eQ-Y1e" secondAttribute="trailing" id="FGL-Ol-Yd9"/>
+                            <constraint firstItem="XbY-CD-rv8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GgE-PN-efj"/>
+                            <constraint firstItem="rJZ-gH-EA4" firstAttribute="top" secondItem="xHA-kH-Akb" secondAttribute="bottom" constant="8" id="ITw-1r-tkV"/>
+                            <constraint firstItem="rJZ-gH-EA4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="120" id="Ogo-Q5-DST"/>
+                            <constraint firstItem="mNd-Y7-Xad" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="127" id="Qcr-Y9-BOt"/>
+                            <constraint firstAttribute="trailing" secondItem="mNd-Y7-Xad" secondAttribute="trailing" constant="127" id="RTg-5q-L7T"/>
+                            <constraint firstAttribute="trailing" secondItem="rJZ-gH-EA4" secondAttribute="trailing" constant="20" id="VJj-Nh-bv8"/>
+                            <constraint firstItem="xHA-kH-Akb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="127" id="dcW-uP-DLW"/>
+                            <constraint firstItem="xHA-kH-Akb" firstAttribute="top" secondItem="mbU-eQ-Y1e" secondAttribute="bottom" constant="51.5" id="g1r-yf-u7C"/>
+                            <constraint firstAttribute="trailing" secondItem="XbY-CD-rv8" secondAttribute="trailing" id="gsK-hG-cSV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xHA-kH-Akb" secondAttribute="trailing" constant="40" id="jqP-4b-mPr"/>
+                            <constraint firstItem="XbY-CD-rv8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n6f-51-bNX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XbY-CD-rv8" secondAttribute="bottom" id="ult-G8-ldX"/>
+                            <constraint firstItem="mNd-Y7-Xad" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="vOc-rn-SdV"/>
+                            <constraint firstItem="mbU-eQ-Y1e" firstAttribute="top" secondItem="mNd-Y7-Xad" secondAttribute="bottom" constant="5" id="y90-0k-1YU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="mbU-eQ-Y1e" id="oor-8G-Oyb"/>
+                        <outlet property="sketchLabel" destination="rJZ-gH-EA4" id="awJ-z4-j2L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="115.59220389805098"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sketch-daily-background.png" width="414" height="736"/>
+    </resources>
 </document>

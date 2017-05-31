@@ -1,0 +1,7 @@
+#Alamofire for requests
+github "Alamofire/Alamofire" ~> 4.4
+
+#swiftyJSON for parsing JSON
+github "SwiftyJSON/Alamofire-SwiftyJSON" "master"
+
+github "SwiftyJSON/SwiftyJSON"

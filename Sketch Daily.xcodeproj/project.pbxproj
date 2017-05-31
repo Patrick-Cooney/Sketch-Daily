@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5AA522D1EDE48C500785E6B /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A5AA522B1EDE48C500785E6B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5AA522E1EDE48C500785E6B /* AlamofireSwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A5AA522C1EDE48C500785E6B /* AlamofireSwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5AA52301EDE49F600785E6B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AA522F1EDE49F600785E6B /* SwiftyJSON.framework */; };
+		A5AA52321EDE4A2100785E6B /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A5AA52311EDE4A2100785E6B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5C9E0C01EDE46EF00B64D4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9E0BF1EDE46EF00B64D4C /* AppDelegate.swift */; };
 		A5C9E0C21EDE46EF00B64D4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C9E0C11EDE46EF00B64D4C /* ViewController.swift */; };
 		A5C9E0C51EDE46EF00B64D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C9E0C31EDE46EF00B64D4C /* Main.storyboard */; };
 		A5C9E0C71EDE46EF00B64D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5C9E0C61EDE46EF00B64D4C /* Assets.xcassets */; };
 		A5C9E0CA1EDE46EF00B64D4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C9E0C81EDE46EF00B64D4C /* LaunchScreen.storyboard */; };
+		A5C9E0D41EDE47C100B64D4C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C9E0D21EDE47C100B64D4C /* Alamofire.framework */; };
+		A5C9E0D51EDE47C100B64D4C /* AlamofireSwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C9E0D31EDE47C100B64D4C /* AlamofireSwiftyJSON.framework */; };
+		A5F8D6671EDE5D6F00976FB9 /* sketch-daily-background.png in Resources */ = {isa = PBXBuildFile; fileRef = A5F8D6661EDE5D6F00976FB9 /* sketch-daily-background.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A5AA522A1EDE489800785E6B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5AA522D1EDE48C500785E6B /* Alamofire.framework in CopyFiles */,
+				A5AA522E1EDE48C500785E6B /* AlamofireSwiftyJSON.framework in CopyFiles */,
+				A5AA52321EDE4A2100785E6B /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A5AA522B1EDE48C500785E6B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A5AA522C1EDE48C500785E6B /* AlamofireSwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireSwiftyJSON.framework; path = Carthage/Build/iOS/AlamofireSwiftyJSON.framework; sourceTree = "<group>"; };
+		A5AA522F1EDE49F600785E6B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		A5AA52311EDE4A2100785E6B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		A5C9E0BC1EDE46EF00B64D4C /* Sketch Daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sketch Daily.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C9E0BF1EDE46EF00B64D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C9E0C11EDE46EF00B64D4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +48,9 @@
 		A5C9E0C61EDE46EF00B64D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5C9E0C91EDE46EF00B64D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5C9E0CB1EDE46EF00B64D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C9E0D21EDE47C100B64D4C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A5C9E0D31EDE47C100B64D4C /* AlamofireSwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireSwiftyJSON.framework; path = Carthage/Build/iOS/AlamofireSwiftyJSON.framework; sourceTree = "<group>"; };
+		A5F8D6661EDE5D6F00976FB9 /* sketch-daily-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sketch-daily-background.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C9E0D41EDE47C100B64D4C /* Alamofire.framework in Frameworks */,
+				A5C9E0D51EDE47C100B64D4C /* AlamofireSwiftyJSON.framework in Frameworks */,
+				A5AA52301EDE49F600785E6B /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +70,13 @@
 		A5C9E0B31EDE46EF00B64D4C = {
 			isa = PBXGroup;
 			children = (
+				A5F8D6661EDE5D6F00976FB9 /* sketch-daily-background.png */,
+				A5AA52311EDE4A2100785E6B /* SwiftyJSON.framework */,
+				A5AA522B1EDE48C500785E6B /* Alamofire.framework */,
+				A5AA522C1EDE48C500785E6B /* AlamofireSwiftyJSON.framework */,
 				A5C9E0BE1EDE46EF00B64D4C /* Sketch Daily */,
 				A5C9E0BD1EDE46EF00B64D4C /* Products */,
+				A5C9E0D11EDE47C000B64D4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +101,16 @@
 			path = "Sketch Daily";
 			sourceTree = "<group>";
 		};
+		A5C9E0D11EDE47C000B64D4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5AA522F1EDE49F600785E6B /* SwiftyJSON.framework */,
+				A5C9E0D21EDE47C100B64D4C /* Alamofire.framework */,
+				A5C9E0D31EDE47C100B64D4C /* AlamofireSwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +121,8 @@
 				A5C9E0B81EDE46EF00B64D4C /* Sources */,
 				A5C9E0B91EDE46EF00B64D4C /* Frameworks */,
 				A5C9E0BA1EDE46EF00B64D4C /* Resources */,
+				A5C9E0D61EDE47CF00B64D4C /* ShellScript */,
+				A5AA522A1EDE489800785E6B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -124,12 +173,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C9E0CA1EDE46EF00B64D4C /* LaunchScreen.storyboard in Resources */,
+				A5F8D6671EDE5D6F00976FB9 /* sketch-daily-background.png in Resources */,
 				A5C9E0C71EDE46EF00B64D4C /* Assets.xcassets in Resources */,
 				A5C9E0C51EDE46EF00B64D4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5C9E0D61EDE47CF00B64D4C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireSwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5C9E0B81EDE46EF00B64D4C /* Sources */ = {
@@ -260,6 +329,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Sketch Daily/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.robotsintre.Sketch-Daily";
@@ -272,6 +345,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Sketch Daily/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "es.robotsintre.Sketch-Daily";
@@ -299,6 +376,7 @@
 				A5C9E0D01EDE46EF00B64D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
