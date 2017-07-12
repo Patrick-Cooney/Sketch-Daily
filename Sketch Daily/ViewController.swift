@@ -13,15 +13,31 @@ import AlamofireSwiftyJSON
 var sketch: String = ""
 var date: String = ""
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var sketchLabel: UILabel!
     
+    let picker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        updateLabels()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func updateLabels() {
         let parameters: Parameters = ["sort": "new"]
         Alamofire.request("https://www.reddit.com/r/sketchdaily/new.json", method: .get, parameters: parameters, encoding: URLEncoding.default).responseSwiftyJSON { response in
             switch response.result {
@@ -38,16 +54,9 @@ class ViewController: UIViewController {
                 // Handle error
                 print("Error: \(error)")
             }
-          
+            
         }
-
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
