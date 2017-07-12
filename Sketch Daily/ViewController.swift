@@ -57,6 +57,35 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
         }
     }
+    
+    func openCamera(){
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            picker.delegate = self
+            picker.allowsEditing = false
+            picker.sourceType = .camera
+            picker.cameraCaptureMode = .photo
+            picker.modalPresentationStyle = .fullScreen
+            self.present(picker, animated: true, completion: nil)
+        } else {
+            noCamera()
+        }
+    }
+    
+    //MARK: image picker delegate methods
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        // use the image
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func noCamera() {
+        print("This device has no camera")
+    }
 
 }
 
