@@ -37,6 +37,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func takePhotoAndSubmitSketch(_ sender: Any) {
+        
+        self.openCamera()
+    }
+    
     func updateLabels() {
         let parameters: Parameters = ["sort": "new"]
         Alamofire.request("https://www.reddit.com/r/sketchdaily/new.json", method: .get, parameters: parameters, encoding: URLEncoding.default).responseSwiftyJSON { response in
